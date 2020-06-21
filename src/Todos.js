@@ -21,13 +21,13 @@ export const Todos = ({ todos, onRemove, onDone }) => {
               activeOpacity={0.6}
               underlayColor="#DDDDDD"
             >
-              <Text style={styleText} key={item.id}>
+              <Text style={styleText}>
                 {item.title}
               </Text>
             </TouchableHighlight>
           );
         }}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
       />
     </View>
   );
