@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, TextInput, Button, StyleSheet } from "react-native";
+import { View, TextInput, Button, StyleSheet, Alert } from "react-native";
 
 export const AddTodo = ({ onAdd }) => {
   const [value, setValue] = useState("");
@@ -7,6 +7,8 @@ export const AddTodo = ({ onAdd }) => {
     if (value.trim()) {
       onAdd(value);
       setValue("");
+    } else {
+      Alert.alert('Поле пустое.', 'Введите значение.')
     }
   };
   return (

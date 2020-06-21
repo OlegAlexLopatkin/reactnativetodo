@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button, Alert } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Navbar } from "./src/Navbar";
 import { AddTodo } from "./src/AddTodo";
 import { Todos } from "./src/Todos";
